@@ -1,0 +1,247 @@
+body {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 50% 50%;
+      grid-template: 1fr 1fr 1fr / 50% 50%;
+      grid-template-areas: "a b" "c c" ". .";
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-image: url(images/mobile/image-hero.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  margin-left: -1.4rem;
+}
+
+.menu-button {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+  background: none;
+  outline: none;
+  border: none;
+  height: 2rem;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.landing-header-text-container {
+  display: block;
+  border: white 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding: 1.2rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: c;
+  width: 85%;
+}
+
+.landing-header-text-container h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.menu--mobile {
+  display: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  text-align: center;
+}
+
+.main-image {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  color: #8c8c8c;
+  width: 80%;
+  margin: auto;
+}
+
+main button {
+  margin: auto;
+  margin-top: 1rem;
+  text-justify: center;
+  display: block;
+  background: none;
+  border: solid black 1px;
+  width: 9rem;
+  font-weight: 400;
+  letter-spacing: .25rem;
+  font-size: 1rem;
+  height: 2.5rem;
+  color: black;
+  outline: none;
+  font-family: "Alata", sans-serif;
+  padding-bottom: .2rem;
+}
+
+.creation-links {
+  margin: auto;
+}
+
+.creation-links ul {
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.creation-links ul li {
+  margin-bottom: 1rem;
+}
+
+.creation-links ul li a {
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.creation-links ul li h3 {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  bottom: 20%;
+  font-size: 1.3rem;
+  text-shadow: 4px 2px 10px #000000;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+footer {
+  font-family: "Alata", sans-serif;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  height: 30rem;
+  margin-top: 5rem;
+}
+
+.bottom-logo {
+  -webkit-transform: scale(0.45);
+          transform: scale(0.45);
+  margin-top: 3rem;
+}
+
+footer ul {
+  margin: auto;
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 1.5rem;
+}
+
+.social-media-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 42vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.copyright {
+  margin: auto;
+  color: dimgray;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  padding-top: 3rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
